@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0,
+}
+header{
+    position: fixed;
+    top:0;
+    Left:0;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index:10 ;
+
+}
+header.abajo{
+    background: #5F0F40;
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+header.abajo .logo, 
+header.abajo ul li a{
+    color: #fff;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+
+}
+header ul li a{
+    position: relative;
+    font-family:Helvetica, sans-serif;
+    margin:0 15px;
+    text-decoration: none;
+    color:#fff;
+    letter-spacing:2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:url(tarot.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.zona img:hover{
+    cursor: crosshair;
+    width: 300px;
+}
+
+.logowpp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.logowpp img {
+    width: 130px;
+    height: 130px;
+}
+
+.lista-item {
+    margin-right: 30px;
+}
+
+footer {
+    height: 150px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding:10px ;
+}
+
+.footer-div img{
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.derecho {
+    text-align:center ;
+}
