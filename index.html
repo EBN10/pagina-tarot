@@ -7,24 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="bg-rose-800 border-gray-200 bg-transparent fixed w-full">
+    <header class="fixed z-10 w-full transition duration-500 border-gray-200">
       <nav>
         <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+          class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
         >
           <a
             href="https://flowbite.com/"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <span
-              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              class="self-center text-2xl font-extrabold tracking-tight text-white transition whitespace-nowrap hover:scale-110 hover:underline underline-offset-4"
               >🧿AzuTarot</span
             >
           </a>
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center justify-center w-10 h-10 p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -47,12 +47,12 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-zinc-900/50 backdrop-blur-sm md:bg-transparent md:backdrop-blur-0"
+              class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-zinc-900/50 backdrop-blur-sm md:bg-transparent md:backdrop-blur-0"
             >
               <li>
                 <a
                   href="#inicio"
-                  class="block py-2 px-3 text-white hover:bg-rose-700 rounded md:bg-transparent md:hover:text-rose-400 md:p-0 md:hover:bg-transparent md:hover:scale-110 transition"
+                  class="block px-3 py-2 text-white transition rounded hover:bg-blue-700 md:bg-transparent md:hover:text-blue-400 md:p-0 md:hover:bg-transparent md:hover:scale-110"
                   aria-current="page"
                   >Inicio</a
                 >
@@ -60,21 +60,21 @@
               <li>
                 <a
                   href="#beneficios"
-                  class="block py-2 px-3 text-white hover:bg-rose-700 rounded md:bg-transparent md:hover:text-rose-400 md:p-0 md:hover:bg-transparent md:hover:scale-110 transition"
+                  class="block px-3 py-2 text-white transition rounded hover:bg-blue-700 md:bg-transparent md:hover:text-blue-400 md:p-0 md:hover:bg-transparent md:hover:scale-110"
                   >Beneficios</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="block py-2 px-3 text-white hover:bg-rose-700 rounded md:bg-transparent md:hover:text-rose-400 md:p-0 md:hover:bg-transparent md:hover:scale-110 transition"
+                  href="#servicios"
+                  class="block px-3 py-2 text-white transition rounded hover:bg-blue-700 md:bg-transparent md:hover:text-blue-400 md:p-0 md:hover:bg-transparent md:hover:scale-110"
                   >Servicios</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white hover:bg-rose-700 rounded md:bg-transparent md:hover:text-rose-400 md:p-0 md:hover:bg-transparent md:hover:scale-110 transition"
+                  class="block px-3 py-2 text-white transition rounded hover:bg-blue-700 md:bg-transparent md:hover:text-blue-400 md:p-0 md:hover:bg-transparent md:hover:scale-110"
                   >Contacto</a
                 >
               </li>
@@ -88,15 +88,24 @@
         class="bg-center bg-no-repeat bg-[url('tarot.jpg')] bg-gray-600 bg-blend-multiply bg-cover"
         id="inicio"
       >
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <div class="max-w-screen-xl px-4 py-24 mx-auto text-center lg:py-56">
           <h1
-            class="mb-4 text-4xl font-extrabold leading-none text-white md:text-5xl lg:text-6xl tracking-tight"
+            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl"
           >
-            Comprender el Presente <br />
-            Prepararse para el Futuro
+            Comprender el
+            <span
+              class="animate-background-shine bg-[linear-gradient(110deg,#2563eb,45%,#53baf5,55%,#2563eb)] bg-[length:250%_100%] bg-clip-text text-transparent"
+              >Presente</span
+            >
+            <br />
+            Prepararse para el
+            <span
+              class="animate-background-shine bg-[linear-gradient(110deg,#fbbf24,45%,#fff6a1,55%,#fbbf24)] bg-[length:250%_100%] bg-clip-text text-transparent"
+              >Futuro</span
+            >
           </h1>
           <p
-            class="mb-8 text-lg font-semibold text-gray-300 lg:text-xl sm:px-16 lg:px-48 tracking-wide"
+            class="mb-8 text-lg font-semibold tracking-wide text-gray-300 lg:text-xl sm:px-16 lg:px-48"
           >
             Analiza tu Realidad Actual y Anticípate a lo que Viene con la Ayuda
             del Tarot.
@@ -106,7 +115,7 @@
           >
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-rose-700 hover:bg-rose-800 focus:ring-4 focus:ring-rose-300 dark:focus:ring-rose-900 transition duration-100"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white transition duration-100 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Contactar
               <svg
@@ -127,7 +136,7 @@
             </a>
             <a
               href="#"
-              class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100/10 focus:ring-4 focus:ring-gray-400 transition duration-100 backdrop-blur-sm"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white transition duration-100 border border-white rounded-lg sm:ms-4 hover:bg-gray-100/10 focus:ring-4 focus:ring-gray-400 backdrop-blur-sm"
             >
               Beneficios
             </a>
@@ -139,25 +148,25 @@
         id="beneficios"
       >
         <h2
-          class="mb-4 text-4xl font-extrabold leading-none text-gray-900 md:text-5xl lg:text-6xl tracking-tight"
+          class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
         >
           Beneficios
         </h2>
         <div class="flex flex-col gap-20">
           <article
-            class="flex gap-10 flex-col md:flex-row justify-center items-center max-w-[1000px]"
+            class="flex gap-10 flex-col md:flex-row justify-center items-center max-w-[1000px] hover:scale-105 transition"
           >
             <img
               src="imagenes/primera.jpg"
               alt="tarot manos-tarot"
-              class="rounded-lg aspect-video md:aspect-square w-full md:size-72 object-cover shadow-xl shadow-gray-900/70"
+              class="object-cover w-full rounded-lg shadow-xl aspect-video md:aspect-square md:size-72 shadow-gray-900/70"
             />
-            <div class="flex gap-8 flex-col justify-center pb-4">
+            <div class="flex flex-col justify-center gap-8 pb-4">
               <h3 class="text-3xl font-extrabold text-center">
                 Toma de Decisiones Informada
               </h3>
               <p
-                class="text-xl font-semibold opacity-70 tracking-wide text-pretty text-center md:text-left"
+                class="text-xl font-semibold tracking-wide text-center opacity-70 text-pretty md:text-left"
               >
                 Las lecturas de tarot pueden proporcionar perspectivas valiosas
                 para tomar decisiones fundamentadas en situaciones complejas.
@@ -165,19 +174,19 @@
             </div>
           </article>
           <article
-            class="flex gap-10 flex-col md:flex-row-reverse justify-center items-center max-w-[1000px]"
+            class="flex gap-10 flex-col md:flex-row-reverse justify-center items-center max-w-[1000px] hover:scale-105 transition"
           >
             <img
               src="imagenes/segunda.jpg"
               alt="tarot manos-tarot"
-              class="rounded-lg aspect-video md:aspect-square w-full md:size-72 object-cover shadow-xl shadow-gray-900/70"
+              class="object-cover w-full rounded-lg shadow-xl aspect-video md:aspect-square md:size-72 shadow-gray-900/70"
             />
-            <div class="flex gap-8 flex-col justify-center pb-4">
+            <div class="flex flex-col justify-center gap-8 pb-4">
               <h3 class="text-3xl font-extrabold text-center">
                 Claridad Mental
               </h3>
               <p
-                class="text-xl font-semibold opacity-70 tracking-wide text-pretty text-center md:text-left"
+                class="text-xl font-semibold tracking-wide text-center opacity-70 text-pretty md:text-left"
               >
                 Ayuda a clarificar pensamientos y emociones, facilitando la toma
                 de decisiones con una mente clara.
@@ -185,19 +194,19 @@
             </div>
           </article>
           <article
-            class="flex gap-10 flex-col md:flex-row justify-center items-center max-w-[1000px]"
+            class="flex gap-10 flex-col md:flex-row justify-center items-center max-w-[1000px] hover:scale-105 transition"
           >
             <img
               src="imagenes/tercera.jpg"
               alt="tarot manos-tarot"
-              class="rounded-lg aspect-video md:aspect-square w-full md:size-72 object-cover shadow-xl shadow-gray-900/70"
+              class="object-cover w-full rounded-lg shadow-xl aspect-video md:aspect-square md:size-72 shadow-gray-900/70"
             />
-            <div class="flex gap-8 flex-col justify-center pb-4">
+            <div class="flex flex-col justify-center gap-8 pb-4">
               <h3 class="text-3xl font-extrabold text-center">
                 Desarrollo Personal Continuo
               </h3>
               <p
-                class="text-xl font-semibold opacity-70 tracking-wide text-pretty text-center md:text-left"
+                class="text-xl font-semibold tracking-wide text-center opacity-70 text-pretty md:text-left"
               >
                 El tarot puede ser una herramienta de crecimiento personal
                 constante, guiando hacia la evolución y la autorreflexión.
@@ -205,19 +214,19 @@
             </div>
           </article>
           <article
-            class="flex gap-10 flex-col md:flex-row-reverse justify-center items-center max-w-[1000px]"
+            class="flex gap-10 flex-col md:flex-row-reverse justify-center items-center max-w-[1000px] hover:scale-105 transition"
           >
             <img
               src="imagenes/cuarta.jpg"
               alt="tarot manos-tarot"
-              class="rounded-lg aspect-video md:aspect-square w-full md:size-72 object-cover shadow-xl shadow-gray-900/70"
+              class="object-cover w-full rounded-lg shadow-xl aspect-video md:aspect-square md:size-72 shadow-gray-900/70"
             />
-            <div class="flex gap-8 flex-col justify-center pb-4">
+            <div class="flex flex-col justify-center gap-8 pb-4">
               <h3 class="text-3xl font-extrabold text-center">
                 Aceptación de Cambios
               </h3>
               <p
-                class="text-xl font-semibold opacity-70 tracking-wide text-pretty text-center md:text-left"
+                class="text-xl font-semibold tracking-wide text-center opacity-70 text-pretty md:text-left"
               >
                 Facilita la aceptación de cambios inevitables, brindando
                 consuelo y orientación durante transiciones.
@@ -227,44 +236,68 @@
         </div>
       </section>
       <section
-        class="flex flex-col justify-center items-center px-4 py-20 gap-12"
+        class="flex flex-col items-center justify-center gap-12 px-4 py-20"
+        id="servicios"
       >
         <h2
-          class="mb-4 text-4xl font-extrabold leading-none text-gray-900 md:text-5xl lg:text-6xl tracking-tight"
+          class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
         >
           Servicios
         </h2>
-        <div class="flex flex-row justify-center items-center gap-16 pb-9">
-          <div>
+        <div
+          class="flex flex-col items-center justify-center gap-16 md:flex-row pb-9"
+        >
+          <article
+            class="relative aspect-video md:h-[350px] xl:h-[500px] md:aspect-[3/5] transition inclinacion group"
+          >
             <img
               src="imagenes/carta.png"
               alt="si lo crees, lo creas"
-              class="rounded-xl h-[500px] aspect-[3/5] object-cover shadow-xl shadow-gray-900/70"
+              class="object-cover w-full h-full shadow-xl rounded-xl shadow-gray-900/70 hover:shadow-2xl"
             />
-          </div>
-          <div>
+            <h3
+              class="absolute w-full text-5xl tracking-tight font-extrabold text-center text-white drop-shadow-lg transition duration-300 ease-in-out translate-y-5 opacity-0 group-hover:-translate-y-1/2 bottom-[43%] group-hover:opacity-100"
+            >
+              SALUD
+            </h3>
+          </article>
+          <article
+            class="relative aspect-video md:h-[450px] xl:h-[600px] md:aspect-[4/7] transition inclinacion group"
+          >
             <img
               src="imagenes/carta.png"
               alt="si lo crees, lo creas"
-              class="rounded-xl h-[600px]"
+              class="object-cover w-full h-full shadow-xl rounded-xl shadow-gray-900/70 hover:shadow-2xl"
             />
-          </div>
-          <div>
+            <h3
+              class="absolute w-full text-5xl tracking-tight font-extrabold text-center text-white drop-shadow-lg transition duration-300 ease-in-out translate-y-5 opacity-0 group-hover:-translate-y-1/2 bottom-[43%] group-hover:opacity-100"
+            >
+              SALUD
+            </h3>
+          </article>
+          <article
+            class="relative aspect-video md:h-[350px] xl:h-[500px] md:aspect-[3/5] transition inclinacion group"
+          >
             <img
               src="imagenes/carta.png"
               alt="si lo crees, lo creas"
-              class="rounded-xl h-[500px]"
+              class="object-cover w-full h-full shadow-xl rounded-xl shadow-gray-900/70 hover:shadow-2xl"
             />
-          </div>
+            <h3
+              class="absolute w-full text-5xl tracking-tight font-extrabold text-center text-white drop-shadow-lg transition duration-300 ease-in-out translate-y-5 opacity-0 group-hover:-translate-y-1/2 bottom-[43%] group-hover:opacity-100"
+            >
+              SALUD
+            </h3>
+          </article>
         </div>
       </section>
     </main>
     <footer class="bg-gray-700 shadow">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="w-full max-w-screen-xl p-4 mx-auto md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
             href="https://flowbite.com/"
-            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse"
           >
             <img
               src="https://flowbite.com/docs/images/logo.svg"
@@ -307,5 +340,6 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
