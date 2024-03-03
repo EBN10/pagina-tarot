@@ -236,11 +236,11 @@
         </div>
       </section>
       <section
-        class=" px-4 py-20 bg-[url('./imagenes/stacked-steps-haikei.svg')] bg-cover bg-top bg-no-repeat h-[500px]"
+        class="px-4 py-20 bg-[url('./imagenes/stacked-steps-haikei.svg')] bg-cover bg-top bg-no-repeat h-[500px]"
         id="servicios"
       >
         <h2
-          class=" text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl drop-shadow-md text-center"
+          class="text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl drop-shadow-md text-center"
         >
           Lectura de Cartas
         </h2>
@@ -258,7 +258,10 @@
           </div>
         </div>
       </section>
-      <section class="flex flex-col gap-8 justify-center text-center bg-[#efefee] px-4 py-20  bg-cover bg-top bg-no-repeat h-[500px] items-center" id="contacto">
+      <section
+        class="flex flex-col gap-8 justify-center text-center bg-[#efefee] px-4 py-20 bg-cover bg-top bg-no-repeat h-[500px] items-center"
+        id="contacto"
+      >
         <h2
           class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
         >
@@ -267,11 +270,13 @@
         <p
           class="font-semibold tracking-wide text-lg max-w-screen-md text-center text-pretty drop-shadow-lg"
         >
-          Estoy disponible para comunicarme a través de Instagram o WhatsApp.
-          No dudes en ponerte en contacto conmigo.
+          Estoy disponible para comunicarme a través de Instagram o WhatsApp. No
+          dudes en ponerte en contacto conmigo.
         </p>
         <div class="flex justify-center gap-7">
-          <a href="https://www.instagram.com/tarotazu/" target="_blank"
+          <a
+            href="https://www.instagram.com/tarotazu/"
+            target="_blank"
             class="bg-gradient-to-t from-amber-300/60 from-5% via-rose-600/50 via-55% to-indigo-600/30 p-6 rounded-full backdrop-blur-md border border-white/80 shadow-lg inline-block group hover:scale-105 transition hover:shadow-xl"
           >
             <svg
@@ -292,7 +297,9 @@
               <path d="M16.5 7.5l0 .01" />
             </svg>
           </a>
-          <a href="https://wa.me/5493854899448" target="_blank"
+          <a
+            href="https://wa.me/5493854899448"
+            target="_blank"
             class="bg-green-500/60 p-6 rounded-full backdrop-blur-md border border-white shadow-lg inline-block group hover:scale-105 transition hover:shadow-xl"
           >
             <svg
@@ -316,7 +323,7 @@
       </section>
     </main>
     <footer class="bg-zinc-950 shadow">
-      <div class="w-full max-w-screen-xl p-4 mx-auto ">
+      <div class="w-full max-w-screen-xl p-4 mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
             href="https://flowbite.com/"
@@ -327,13 +334,19 @@
               >🧿AzuTarot</span
             >
           </a>
-          <p class="block text-sm text-white/60 sm:text-center ">Hecho por <a href="https://www.instagram.com/_emirbasil/" target="_blank"> @_emirbasil</a> y <a href="https://www.instagram.com/sleepy.gogo/" target="_blank">@sleepy.gogo</a>.</p>
+          <p class="block text-sm text-white/60 sm:text-center">
+            Hecho por
+            <a href="https://www.instagram.com/_emirbasil/" target="_blank">
+              @_emirbasil</a
+            >
+            y
+            <a href="https://www.instagram.com/sleepy.gogo/" target="_blank"
+              >@sleepy.gogo</a
+            >.
+          </p>
         </div>
-        <hr
-          class="my-2  sm:mx-auto border-gray-700"
-        />
-        <span
-          class="block text-sm text-white/60 sm:text-center "
+        <hr class="my-2 sm:mx-auto border-gray-700" />
+        <span class="block text-sm text-white/60 sm:text-center"
           >© 2024
           <a href="https://flowbite.com/" class="hover:underline">AzuTarot™</a>.
           Todos los derechos reservados.</span
@@ -341,6 +354,11 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+      const header = document.querySelector("header");
+      document.addEventListener("scroll", () => {
+        header.classList.toggle("header-transparente", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
