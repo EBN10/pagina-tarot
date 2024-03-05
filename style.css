@@ -31,8 +31,3 @@
 .inclinacion:hover::before {
   opacity: 1;
 }
-
-.header-transparente {
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
-}
