@@ -1,5 +1,7 @@
 <h1 align="center">AzuTarot 🧿🔮✨</h1>
 
+![688shots_so](https://github.com/Sleepy-gogo/pagina-tarot/assets/62667318/e26fb375-8511-4019-8b3b-6fb4ddf6b4ff)
+
 Este proyecto fue construido con [Vite](https://vitejs.dev/), [TailwindCSS](https://tailwindcss.com/) y algunos componentes de [Flowbite](https://flowbite.com/). Puedes ver el deployment en vivo en [Este link](https://pagina-tarot.vercel.app).
 
 ## Uso 🌙
