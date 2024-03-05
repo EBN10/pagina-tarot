@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <header class="fixed z-10 w-full transition duration-500 border-gray-200">
+    <header
+      class="fixed z-10 w-full transition duration-500 border-gray-200 data-[scrolled]:backdrop-blur-md data-[scrolled]:bg-zinc-950/70 group"
+    >
       <nav>
         <div
-          class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 mx-auto"
+          class="flex flex-wrap items-center justify-between max-w-screen-xl p-4 group-[[data-scrolled]]:py-2 mx-auto transition"
         >
           <a
             href="https://flowbite.com/"
@@ -47,7 +49,7 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul
-              class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-zinc-900/50 backdrop-blur-sm md:bg-transparent md:backdrop-blur-0"
+              class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-zinc-950/95 md:bg-transparent"
             >
               <li>
                 <a
@@ -240,16 +242,22 @@
         id="servicios"
       >
         <h2
-          class="text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl lg:text-6xl drop-shadow-md text-center"
+          class="text-4xl font-extrabold leading-none tracking-tight text-center text-white md:text-5xl lg:text-6xl drop-shadow-md"
         >
           Lectura de Cartas
         </h2>
-        <div class="flex justify-center items-center size-full">
+        <div class="flex items-center justify-center size-full">
           <div
-            class="bg-white/30 p-8 rounded-lg backdrop-blur-md border border-white/60 shadow-lg inline-block"
+            class="relative inline-block p-8 overflow-hidden transition border rounded-lg shadow-lg bg-white/30 backdrop-blur-md border-white/60 group hover:border-white/80 hover:shadow-xl hover:scale-[1.01] md:hover:scale-105 hover:bg-white/40"
           >
+            <div
+              class="absolute top-0 p-16 transition scale-100 -translate-x-1/2 -translate-y-1/2 rounded-full left-full blur-2xl bg-rose-400/20 group-hover:scale-110 group-hover:bg-rose-400/30"
+            ></div>
+            <div
+              class="absolute left-0 p-20 transition scale-100 -translate-x-1/2 -translate-y-1/2 rounded-full top-full blur-2xl bg-indigo-400/20 group-hover:scale-110 group-hover:bg-indigo-400/30"
+            ></div>
             <p
-              class="font-semibold tracking-wide text-lg max-w-screen-md text-center text-pretty drop-shadow-lg"
+              class="max-w-screen-md text-lg font-semibold tracking-wide text-center text-pretty drop-shadow-lg"
             >
               Explorar las cartas del tarot es como abrir un libro sagrado que
               revela las páginas de nuestra propia historia, iluminando senderos
@@ -268,7 +276,7 @@
           Contacto
         </h2>
         <p
-          class="font-semibold tracking-wide text-lg max-w-screen-md text-center text-pretty drop-shadow-lg"
+          class="max-w-screen-md text-lg font-semibold tracking-wide text-center text-pretty drop-shadow-lg"
         >
           Estoy disponible para comunicarme a través de Instagram o WhatsApp. No
           dudes en ponerte en contacto conmigo.
@@ -277,11 +285,11 @@
           <a
             href="https://www.instagram.com/tarotazu/"
             target="_blank"
-            class="bg-gradient-to-t from-amber-300/60 from-5% via-rose-600/50 via-55% to-indigo-600/30 p-6 rounded-full backdrop-blur-md border border-white/80 shadow-lg inline-block group hover:scale-105 transition hover:shadow-xl"
+            class="bg-gradient-to-t from-amber-300/60 from-5% via-rose-600/50 via-55% to-indigo-600/30 hover:from-amber-300/80 hover:via-rose-600/70 hover:via-60% hover:to-indigo-600/50 hover:border-white p-6 rounded-full backdrop-blur-md border border-white/80 shadow-lg inline-block group hover:scale-105 transition hover:shadow-xl"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-white drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-xl transition"
+              class="text-white transition duration-100 size-10 drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-xl"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
@@ -300,11 +308,11 @@
           <a
             href="https://wa.me/5493854899448"
             target="_blank"
-            class="bg-green-500/60 p-6 rounded-full backdrop-blur-md border border-white shadow-lg inline-block group hover:scale-105 transition hover:shadow-xl"
+            class="inline-block p-6 transition border border-white rounded-full shadow-lg bg-green-500/60 hover:bg-green-500/80 backdrop-blur-md group hover:scale-105 hover:shadow-xl"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="size-10 text-white drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-xl transition"
+              class="text-white transition duration-100 size-10 drop-shadow-lg group-hover:scale-110 group-hover:drop-shadow-xl"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
@@ -322,12 +330,12 @@
         </div>
       </section>
     </main>
-    <footer class="bg-zinc-950 shadow">
+    <footer class="shadow bg-zinc-950">
       <div class="w-full max-w-screen-xl p-4 mx-auto">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a
             href="https://flowbite.com/"
-            class="flex items-center space-x-3 sm:mb-0 rtl:space-x-reverse mb-4"
+            class="flex items-center mb-4 space-x-3 sm:mb-0 rtl:space-x-reverse"
           >
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
@@ -335,17 +343,17 @@
             >
           </a>
           <p class="block text-sm text-white/60 sm:text-center">
-            Hecho por
+            Página realizada por
             <a href="https://www.instagram.com/_emirbasil/" target="_blank">
               @_emirbasil</a
             >
             y
             <a href="https://www.instagram.com/sleepy.gogo/" target="_blank"
               >@sleepy.gogo</a
-            >.
+            >
           </p>
         </div>
-        <hr class="my-2 sm:mx-auto border-gray-700" />
+        <hr class="my-2 border-gray-700 sm:mx-auto" />
         <span class="block text-sm text-white/60 sm:text-center"
           >© 2024
           <a href="https://flowbite.com/" class="hover:underline">AzuTarot™</a>.
@@ -355,9 +363,13 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
-      const header = document.querySelector("header");
-      document.addEventListener("scroll", () => {
-        header.classList.toggle("header-transparente", window.scrollY > 0);
+      const header = document.querySelector('header');
+      document.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          header.setAttribute('data-scrolled', true);
+          return;
+        }
+        header.removeAttribute('data-scrolled');
       });
     </script>
   </body>
